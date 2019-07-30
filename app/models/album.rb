@@ -1,6 +1,4 @@
 class Album < ApplicationRecord
-  belongs_to :artist
-
   has_many :reviews
   has_many :reviewers, through: :reviews, source: :user
 
